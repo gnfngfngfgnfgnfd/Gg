@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "capybara:capybara",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 7,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:difficulty_filter": {
+          "min": "peaceful",
+          "max": "hard"
+        },
+        "minecraft:weight": {
+          "default": 12
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 5
+        },
+        "minecraft:biome_filter": {
+          "any_of": [
+            { "test": "has_biome_tag", "operator": "==", "value": "jungle" },
+            { "test": "has_biome_tag", "operator": "==", "value": "swamp" },
+            { "test": "has_biome_tag", "operator": "==", "value": "river" },
+            { "test": "has_biome_tag", "operator": "==", "value": "plains" }
+          ]
+        },
+        "minecraft:spawn_event": {
+          "event": "capybara:entity_spawned"
+        }
+      }
+    ]
+  }
+}
