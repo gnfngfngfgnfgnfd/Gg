@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:shark",
+      "materials": { "default": "fish" },
+      "textures": { "default": "textures/entity/shark" },
+      "geometry": { "default": "geometry.dolphin" },
+      "render_controllers": ["controller.render.shark"],
+      "spawn_egg": { "base_color": "#4A4A5A", "overlay_color": "#A0A0B0" }
+    }
+  }
+}

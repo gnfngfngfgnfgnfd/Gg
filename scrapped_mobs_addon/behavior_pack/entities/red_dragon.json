@@ -1,0 +1,65 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "scrapped:red_dragon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["red_dragon", "monster", "mob"] },
+      "minecraft:health": { "value": 200, "max": 200 },
+      "minecraft:collision_box": { "width": 4.0, "height": 3.0 },
+      "minecraft:movement": { "value": 0.3 },
+      "minecraft:flying_speed": { "value": 0.8 },
+      "minecraft:navigation.fly": {
+        "can_path_over_water": true,
+        "can_path_from_air": true
+      },
+      "minecraft:movement.fly": {},
+      "minecraft:can_fly": {},
+      "minecraft:breathable": { "breathes_air": true, "breathes_lava": false },
+      "minecraft:nameable": {},
+      "minecraft:despawn": { "despawn_from_distance": {} },
+      "minecraft:attack": { "damage": 12 },
+      "minecraft:shooter": {
+        "def": "scrapped:fire_ball",
+        "auxVal": -1
+      },
+      "minecraft:loot": { "table": "loot_tables/entities/red_dragon.json" },
+      "minecraft:experience_reward": { "on_death": "query.last_hurt_by_player ? 50 : 0" },
+      "minecraft:behavior.float": { "priority": 0 },
+      "minecraft:behavior.fire_at_target": {
+        "priority": 2,
+        "min_snipe_distance": 0,
+        "owner_anchor": 0,
+        "target_anchor": 0,
+        "attack_radius": 30,
+        "charge_shoot_trigger": 0,
+        "charge_charged_trigger": 0
+      },
+      "minecraft:behavior.melee_attack": { "priority": 3, "speed_multiplier": 1.0 },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "reselect_targets": true,
+        "within_radius": 40,
+        "entity_types": [
+          { "filters": { "test": "is_family", "subject": "other", "value": "player" } }
+        ]
+      },
+      "minecraft:behavior.random_fly": {
+        "priority": 7,
+        "xz_dist": 15,
+        "y_dist": 8,
+        "y_offset": 0,
+        "speed_multiplier": 1.0,
+        "can_land_on_trees": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:behavior.look_at_player": { "priority": 8, "look_distance": 16 },
+      "minecraft:physics": {},
+      "minecraft:pushable": { "is_pushable": false, "is_pushable_by_piston": true }
+    }
+  }
+}

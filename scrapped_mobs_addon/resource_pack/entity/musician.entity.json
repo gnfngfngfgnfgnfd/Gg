@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:musician",
+      "materials": { "default": "entity" },
+      "textures": { "default": "textures/entity/musician" },
+      "geometry": { "default": "geometry.villager_v2" },
+      "render_controllers": ["controller.render.musician"],
+      "spawn_egg": { "base_color": "#6A4F8A", "overlay_color": "#D4A0E0" }
+    }
+  }
+}

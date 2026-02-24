@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:sloth",
+      "materials": { "default": "entity" },
+      "textures": { "default": "textures/entity/sloth" },
+      "geometry": { "default": "geometry.bear" },
+      "render_controllers": ["controller.render.sloth"],
+      "spawn_egg": { "base_color": "#8B7355", "overlay_color": "#C8A882" }
+    }
+  }
+}

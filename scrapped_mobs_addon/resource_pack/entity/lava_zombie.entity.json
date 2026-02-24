@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:lava_zombie",
+      "materials": { "default": "entity_emissive" },
+      "textures": { "default": "textures/entity/lava_zombie" },
+      "geometry": { "default": "geometry.zombie" },
+      "render_controllers": ["controller.render.lava_zombie"],
+      "spawn_egg": { "base_color": "#8B0000", "overlay_color": "#FF6600" }
+    }
+  }
+}

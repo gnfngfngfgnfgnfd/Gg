@@ -1,0 +1,72 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "scrapped:beaver",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "scrapped:beaver_adult": {
+        "minecraft:experience_reward": { "on_death": "1+1*query.last_hurt_by_player" }
+      },
+      "scrapped:beaver_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": { "value": 0.5 },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": ["oak_log", "birch_log"],
+          "grow_up": { "event": "scrapped:beaver_grow_up", "target": "self" }
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["beaver", "animal", "mob"] },
+      "minecraft:health": { "value": 14, "max": 14 },
+      "minecraft:collision_box": { "width": 0.9, "height": 0.8 },
+      "minecraft:movement": { "value": 0.25 },
+      "minecraft:underwater_movement": { "value": 0.3 },
+      "minecraft:navigation.walk": { "can_path_over_water": true },
+      "minecraft:navigation.swim": {},
+      "minecraft:movement.basic": {},
+      "minecraft:movement.swim": {},
+      "minecraft:jump.static": {},
+      "minecraft:breathable": { "breathes_water": true, "breathes_air": true },
+      "minecraft:nameable": {},
+      "minecraft:despawn": { "despawn_from_distance": {} },
+      "minecraft:loot": { "table": "loot_tables/entities/beaver.json" },
+      "minecraft:behavior.float": { "priority": 0 },
+      "minecraft:behavior.panic": { "priority": 1, "speed_multiplier": 1.4 },
+      "minecraft:behavior.breed": { "priority": 3, "speed_multiplier": 1.0 },
+      "minecraft:behavior.tempt": {
+        "priority": 4,
+        "speed_multiplier": 1.2,
+        "items": ["oak_log", "birch_log"]
+      },
+      "minecraft:behavior.follow_parent": { "priority": 5, "speed_multiplier": 1.1 },
+      "minecraft:behavior.random_swim": { "priority": 6, "speed_multiplier": 0.9 },
+      "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 0.8 },
+      "minecraft:behavior.look_at_player": { "priority": 8, "look_distance": 6 },
+      "minecraft:breedable": {
+        "require_tame": false,
+        "breed_items": ["oak_log", "birch_log"],
+        "breeds_with": {
+          "mate_type": "scrapped:beaver",
+          "baby_type": "scrapped:beaver",
+          "breed_event": { "event": "minecraft:entity_born", "target": "baby" }
+        }
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": { "is_pushable": true }
+    },
+    "events": {
+      "minecraft:entity_spawned": { "add": { "component_groups": ["scrapped:beaver_adult"] } },
+      "minecraft:entity_born": { "add": { "component_groups": ["scrapped:beaver_baby"] } },
+      "scrapped:beaver_grow_up": {
+        "remove": { "component_groups": ["scrapped:beaver_baby"] },
+        "add": { "component_groups": ["scrapped:beaver_adult"] }
+      }
+    }
+  }
+}

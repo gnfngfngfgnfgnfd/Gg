@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:troll",
+      "materials": { "default": "entity" },
+      "textures": { "default": "textures/entity/troll" },
+      "geometry": { "default": "geometry.iron_golem" },
+      "render_controllers": ["controller.render.troll"],
+      "spawn_egg": { "base_color": "#4A6B3A", "overlay_color": "#8BC34A" }
+    }
+  }
+}
