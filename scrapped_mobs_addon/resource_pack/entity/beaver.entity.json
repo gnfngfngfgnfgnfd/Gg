@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:beaver",
+      "materials": { "default": "entity" },
+      "textures": { "default": "textures/entity/beaver" },
+      "geometry": { "default": "geometry.fox" },
+      "render_controllers": ["controller.render.beaver"],
+      "spawn_egg": { "base_color": "#7B4F2E", "overlay_color": "#D4A26A" }
+    }
+  }
+}

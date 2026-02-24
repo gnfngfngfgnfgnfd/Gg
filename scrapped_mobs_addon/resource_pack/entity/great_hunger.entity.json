@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:great_hunger",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/great_hunger" },
+      "geometry": { "default": "geometry.hoglin" },
+      "render_controllers": ["controller.render.great_hunger"],
+      "spawn_egg": { "base_color": "#2E0E00", "overlay_color": "#6B1A00" }
+    }
+  }
+}

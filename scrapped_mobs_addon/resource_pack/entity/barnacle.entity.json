@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:barnacle",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/barnacle" },
+      "geometry": { "default": "geometry.guardian" },
+      "render_controllers": ["controller.render.barnacle"],
+      "spawn_egg": { "base_color": "#3A5F6C", "overlay_color": "#A8CBCF" }
+    }
+  }
+}

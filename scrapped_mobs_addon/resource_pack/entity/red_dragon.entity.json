@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:red_dragon",
+      "materials": { "default": "dragon" },
+      "textures": { "default": "textures/entity/red_dragon" },
+      "geometry": { "default": "geometry.dragon" },
+      "render_controllers": ["controller.render.red_dragon"],
+      "spawn_egg": { "base_color": "#8B0000", "overlay_color": "#FF4500" }
+    }
+  }
+}

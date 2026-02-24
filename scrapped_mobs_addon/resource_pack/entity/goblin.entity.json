@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:goblin",
+      "materials": { "default": "entity" },
+      "textures": { "default": "textures/entity/goblin" },
+      "geometry": { "default": "geometry.zombie" },
+      "render_controllers": ["controller.render.goblin"],
+      "spawn_egg": { "base_color": "#2D5A1B", "overlay_color": "#8BC34A" }
+    }
+  }
+}

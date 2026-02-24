@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:alpaca",
+      "materials": { "default": "sheep" },
+      "textures": { "default": "textures/entity/alpaca" },
+      "geometry": { "default": "geometry.llama" },
+      "render_controllers": ["controller.render.alpaca"],
+      "spawn_egg": { "base_color": "#FFFFFF", "overlay_color": "#C8A882" }
+    }
+  }
+}

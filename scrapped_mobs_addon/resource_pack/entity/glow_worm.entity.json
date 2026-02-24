@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:glow_worm",
+      "materials": { "default": "entity_emissive" },
+      "textures": { "default": "textures/entity/glow_worm" },
+      "geometry": { "default": "geometry.silverfish" },
+      "render_controllers": ["controller.render.glow_worm"],
+      "spawn_egg": { "base_color": "#1A4A1A", "overlay_color": "#7FFF00" }
+    }
+  }
+}

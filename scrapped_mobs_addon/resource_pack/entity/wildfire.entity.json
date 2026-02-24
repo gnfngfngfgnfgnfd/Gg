@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scrapped:wildfire",
+      "materials": { "default": "blaze" },
+      "textures": { "default": "textures/entity/wildfire" },
+      "geometry": { "default": "geometry.blaze" },
+      "render_controllers": ["controller.render.wildfire"],
+      "spawn_egg": { "base_color": "#FF2200", "overlay_color": "#FFB300" }
+    }
+  }
+}
