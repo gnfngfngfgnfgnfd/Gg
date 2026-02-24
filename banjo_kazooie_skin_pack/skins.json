@@ -1,0 +1,36 @@
+{
+  "skins": [
+    {
+      "localization_name": "Banjo",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "textures/banjo.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Kazooie",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "textures/kazooie.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Gruntilda",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "textures/gruntilda.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "MumboJumbo",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "textures/mumbo_jumbo.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Tooty",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "textures/tooty.png",
+      "type": "free"
+    }
+  ],
+  "serialize_name": "BanjoKazooie5DSkinPack",
+  "localization_name": "BanjoKazooie5DSkinPack"
+}
