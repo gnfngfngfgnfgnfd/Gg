@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.capybara.general": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            { "walk": "query.modified_distance_moved > 0" },
+            { "swim": "query.is_in_water" }
+          ]
+        },
+        "walk": {
+          "animations": ["walk"],
+          "transitions": [
+            { "idle": "query.modified_distance_moved <= 0 && !query.is_in_water" },
+            { "swim": "query.is_in_water" }
+          ]
+        },
+        "swim": {
+          "animations": ["swim"],
+          "transitions": [
+            { "idle": "!query.is_in_water && query.modified_distance_moved <= 0" },
+            { "walk": "!query.is_in_water && query.modified_distance_moved > 0" }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resource_pack_name": "capybara_addon",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "orange": {
+      "textures": "textures/items/orange"
+    },
+    "morph_tool": {
+      "textures": "textures/items/morph_tool"
+    },
+    "capybara_spawn_egg": {
+      "textures": "textures/items/capybara_spawn_egg"
+    }
+  }
+}

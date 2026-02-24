@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "capybara:capybara_spawn_egg",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": {
+        "texture": "capybara_spawn_egg"
+      },
+      "minecraft:display_name": {
+        "value": "Capybara Spawn Egg"
+      },
+      "minecraft:entity_placer": {
+        "entity": "capybara:capybara",
+        "dispense_on": ["minecraft:grass", "minecraft:dirt", "minecraft:sand"],
+        "use_on": ["minecraft:grass", "minecraft:dirt", "minecraft:sand", "minecraft:water"]
+      }
+    }
+  }
+}
